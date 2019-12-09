@@ -1,0 +1,88 @@
+
+$white:    #fff !default;
+
+
+// Изменение цветов на свои
+$blue:    #10c9c3 !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+$blue1:  #7fcdc7;
+$blue2: #52a49f;
+$white2: #f0fcf4;
+$gray1: #4c4c4c;
+$blue3: #36c1ba;
+$blue4: #1bb0be;
+$blue5: #203751;
+
+$white3: #e5e4d7;
+$green1: #78bc61;
+$black2: #121920;
+$gray2: #41474d;
+$gray3: #878a8d;
+$white4: #e7e8e8;
+
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+
+    "blue1":   $blue1,
+    "blue2":   $blue2,
+    "white2":   $white2,
+    "gray1":   $gray1,
+    "blue3":   $blue3,
+    "blue4":   $blue4,
+    "blue5":   $blue5,
+    "white3":   $white3,
+    "green1":   $green1,
+    "black2":   $black2,
+    "gray2":   $gray2,
+    "gray3":   $gray3,
+    "white4":   $white4
+
+
+
+  ),
+  $colors
+);
+
+$primary:       $white; //Изменил первичный на белый
+$secondary:     $blue1 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger
+  ),
+  $theme-colors
+);

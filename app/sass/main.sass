@@ -1,0 +1,875 @@
+/*--------Содержание------------*/
+/*Переменные bootstrap-измененные*/
+/*  Bootstrap*/
+
+/* Общие*/
+/*  Header*/
+/*Side*/
+/*Chat_list*/
+/*Chat*/
+/*Agenda*/
+/* Footer*/
+
+/* Animations*/
+/* Media*/
+
+/*--------------------START--------------------*/
+/*Переменные bootstrap-измененные*/
+@import "vars.scss"
+
+/* Bootstrap*/
+@import "../bootstrap/scss/bootstrap"
+
+// ---------------------------------------------------------------------
+
+/*Общие------------------*/
+
+@media(min-width: 1200px)
+	.container
+		max-width: 1366px
+
+.blue_1
+	color: #2775a9
+.blue_2
+	color: #3598db
+.blue_3
+	color: #34495e
+.blue_4
+	color: #8ea1b4 
+.blue_5
+	color: #16315c
+.gray_1
+	color: #c9d6df
+body
+	font-family: "Lato", sans-serif
+	font-size: 14px
+	@extend .text-primary
+	background-color: #f0f3f7
+h2, h3, h4
+	font-weight: bold
+h2
+	font-size: 18px
+h3
+	font-size: 16px
+h4
+	font-size: 15px
+a
+	text-decoration: none !important
+
+
+// .cart, .signIn, .logo
+// 		background-repeat: no-repeat
+// .green_button_sm
+// 	@extend .montserrat_b
+// 	@extend .text-primary
+// 	@extend .bg-ten
+// 	font-size: 16px
+// 	line-height: 1
+// 	border: none
+// 	border-radius: 6px
+// 	padding: 15px 30px 16px 30px
+// .green_button_big
+// 	@extend .green_button_sm
+// 	font-size: 24px
+// 	width: 100%
+// .green_button_big2
+// 	@extend .green_button_sm
+// 	font-size: 18px
+// 	padding: 22px 54px
+// .green_button_newsletter
+// 	@extend .green_button_big
+// 	width: auto
+// 	padding: 18px 58px
+// .green_button_nutr_facts
+// 	@extend .green_button_big2
+// 	padding-left: 60px
+// 	padding-right: 60px
+// .green_button_m
+// 	@extend .green_button_sm
+// 	padding: 12px 30px 13px 30px
+// .symbol
+// 		width: 35px
+// 		height: 9px
+// 		background-image: url(../img/symbol.png)
+// 		background-position: -36px 0px
+
+// .play_video
+// 	background: url(../img/icons_small.png) no-repeat
+// 	background-position: -90px 0px
+// 	position: absolute
+// 	cursor: pointer
+
+/*-------------Общие Finish*/
+
+
+
+
+/* Header-------------*/
+
+header
+	position: relative
+	z-index: 10
+	background-color: #3498db
+	box-shadow: 0px 5px 30px 0px rgba(52, 152, 219, 0.4)
+	.img
+		width: 42px
+		height: 42px
+		border-radius: 50%
+	h4
+		font-weight: bold
+	.profil
+		@extend .blue_1
+		font-size: 12px
+		letter-spacing: 2px
+	i
+		border: solid
+		border-width: 0 2px 2px 0
+		display: inline-block
+		padding: 4px
+		transform: rotate(45deg)
+		-webkit-transform: rotate(45deg)
+		float: right
+/*-------------Header Finish*/
+
+/*Main Start---*/
+.img-circle
+	width: 40px
+	height: 40px
+	border-radius: 50%
+.side
+	min-height: 87vh
+	max-width: 5.33333%
+	box-shadow: 0px 5px 30px 0px rgba(52, 152, 219, 0.1)
+// ----------------------------
+hr
+	width: 90%
+.chat_list
+	max-width: 20.33333%
+	border-radius: 3px
+	box-shadow: 0px 0px 25px 0px rgba(53, 152, 219, 0.1)
+	.chat-list-header
+		h3
+			font-weight: bold
+		button
+			background-color: #d6e3ec
+			font-size: 14px
+			border: none
+			border-radius: 3px
+			padding: 7px 33px
+	hr
+		width: 90%
+	.chat_1
+		.img-circle
+			.circle
+				border-radius: 50%
+				background-color: #3198db
+				position: absolute
+				top: -3px
+				right: -11px
+				width: 20px
+				height: 20px
+				text-align: center
+				font-size: 12px
+				font-weight: bold
+				color: #fff
+				line-height: 1.7
+		h3
+			font-weight: bold
+		p
+			font-size: 12px
+		.gray_1
+			font-size: 12px
+		.round
+			width: 9px
+			height: 9px
+			border-radius: 50%
+.chat
+	max-width: 41.11111%
+	position: relative
+	.round
+		width: 11px
+		height: 11px
+		border-radius: 50%
+		float: right
+	p
+		font-size: 12px
+		border-radius: 30px
+		padding-top: 10px
+		padding-bottom: 10px
+	.triangle
+		background-image: url(../img/triangle.png)
+		position: absolute
+		top:	30%
+		left: -3px
+		width: 15px
+		height: 14px
+	.triangle1
+		background-image: url(../img/triangle1.png)
+		position: absolute
+		top:	30%
+		right: -3px
+		width: 15px
+		height: 14px
+		
+	.w-90
+		width: 90%
+		.blue_4
+			box-shadow: 0px 0px 25px 0px rgba(53, 152, 219, 0.15)
+
+	.mw-83
+		max-width: 83%
+		
+	.bg-blue
+		background-color: #3598db
+		box-shadow: 0px 0px 25px 0px rgba(53, 152, 219, 0.15)
+
+	.message
+		position: absolute
+		bottom: 0px
+		border-radius: 4px
+		box-shadow: 0px 0px 25px 0px rgba(53, 152, 219, 0.05)
+		input
+			font-size: 12px
+			border: none
+			@extend .blue_4
+			&::placeholder
+				@extend .blue_4
+			
+		.img-circle
+			background-color: #3598db
+			background-position: 63%
+			background-image: url(../img/Layer-13.png)
+			background-repeat: no-repeat
+	.messages
+		overflow: hidden 
+		height: 100%
+		width: 108.5%
+		margin-left: -15px
+		.messages2
+			overflow: auto
+			height: 65%
+			width: 108%
+			padding-right: 60px
+			padding-left: 15px
+
+
+.agenda
+	border-radius: 3px
+	position: relative
+	box-shadow: 0px 0px 25px 0px rgba(53, 152, 219, 0.1)
+	.records
+		overflow: auto
+		height: 65vh
+	.new_agenda
+		
+		p
+			font-weight: bold
+	@import "simple-calendar.scss"
+	.calendar
+		header
+			background-color: none	
+
+
+	
+// .main
+
+
+// 	.trigger
+
+// 		padding-left: 13px
+// 		padding-top: 11px
+// 		margin-bottom: 15px
+// 		@extend .text-eleven
+// 		height: 60px
+// 		font-size: 24px
+		// border: 2px solid #e5e4d7
+// 		border-radius: 6px
+
+
+// 		width: 100%
+// 		background: url(../img/arrows_gray.png) no-repeat right .75rem center/8px
+// 		background-size: 16px 25px
+
+// 		display: block
+
+// 		-webkit-box-sizing: border-box
+// 		-moz-box-sizing: border-box
+// 		box-sizing: border-box
+// 		-webkit-transition: all 0.5s ease
+// 		-moz-transition: all 0.5s ease
+// 		-o-transition: all 0.5s ease
+// 		transition: all 0.5s ease
+// 		&:hover
+// 			text-decoration: none
+
+
+
+// 			background-color: #f5f5f5
+
+
+// 	.activetrigger
+
+// 		padding-left: 13px
+// 		padding-top: 11px
+// 		margin-bottom: 15px
+// 		@extend .text-eleven
+// 		height: 60px
+// 		font-size: 24px
+// 		border: 2px solid #e5e4d7
+// 		border-radius: 6px
+
+
+// 		width: 100%
+// 		background: url(../img/arrows_black.png) no-repeat right .75rem center/8px
+// 		background-size: 16px 25px
+// 		display: block
+// 		-webkit-box-sizing: border-box
+// 		-moz-box-sizing: border-box
+// 		box-sizing: border-box
+// 		&:hover, &:active
+// 			text-decoration: none
+// 	.dropcontainer
+// 		position: absolute
+// 		font-size: 16px
+// 		z-index: 1
+// 		margin-top: 65px
+// 		width: 96.5%
+
+// 	.dropcontainer ul
+// 		font-size: 14px
+
+// 		border: 1px solid #e5e4d7
+// 		border-radius: 6px
+// 		background: #fff
+// 		list-style-type: none
+// 		padding-top: 5px
+// 		padding-bottom: 5px
+// 		padding-left: 0
+// 		padding-right: 0
+// 		margin: 0
+// 		width: 100%
+// 		z-index: 100
+// 		-webkit-box-sizing: border-box
+// 		-moz-box-sizing: border-box
+// 		box-sizing: border-box
+// 		li
+// 			padding: 7px
+// 			padding-left: 15px
+// 			width: 100%
+
+// 			-webkit-transition: all 0.5s ease
+// 			-moz-transition: all 0.5s ease
+// 			-o-transition: all 0.5s ease
+// 			transition: all 0.5s ease
+// 			&:hover
+
+// 				background: #e5e4d7
+// 			a
+// 				@extend .text-eleven
+// 				display: inline-block
+// 				width: 100%
+
+// 				&:hover
+// 					text-decoration: none
+// 					font-weight: bold
+
+// 	.dropdownhidden
+// 		display: none
+
+// 	.dropdownvisible
+// 		height: auto
+// 	// ------------------------//
+
+// 	.totalPrice
+// 		font-size: 18px
+// 		span
+// 			font-size: 16px
+// 	form
+// 		label
+// 			cursor: pointer
+// 			@extend .montserrat_b
+// 			span
+// 				@extend .montserrat_r
+// 				@extend .text-thirteen
+// 		.custom-control-label
+// 			left: 30px
+
+
+
+
+// 			&:before
+// 				border-radius: 5px
+// 				border: 2px solid #e5e4d7
+// 				width: 40px
+// 				height: 40px
+// 				left: -59px
+// 				background: #e5e4d7 no-repeat
+// 				padding: 10px
+// 				cursor: pointer
+// 				background-clip: content-box
+// 				background-origin: content-box
+// 			&:after
+// 				border-radius: 5px
+// 				border: 2px solid #e5e4d7
+// 				width: 40px
+// 				height: 40px
+// 				left: -59px
+// 				background: #e5e4d7 no-repeat
+// 				padding: 10px
+// 				cursor: pointer
+// 				background-clip: content-box
+// 				background-origin: content-box
+
+// 		.custom-radio
+// 			.custom-control-input:checked~.custom-control-label:after
+// 				background-color: #36c1ba
+// 				background-image: url(../img/check.png)
+// 				border-color: #36c1ba
+// 				background-clip: padding-box
+// 				background-origin: content-box
+// 				transition: 1s
+// 			.custom-control-input:checked~label
+// 				color: #36c1ba
+// 				transition: 0.1s
+// 		#Subscribe
+// 			display: none
+// 			opacity: 0.7
+// 		.hint
+// 			display: none
+// 			width: 277px
+// 			position: absolute
+// 			top: -106px
+// 			left: -72px
+// 			z-index: 1
+// 			border-radius: 6px
+// 			padding: 13px
+// 			box-shadow: 0px 5px 20px 0px rgba(18,25,32,0.2)
+
+// 			font-size: 13px
+// 			line-height: 1.1
+// 		.custom-radio:hover, .custom-control-input:checked
+// 			&:after
+// 				content: ' '
+// 				width: 20px
+// 				height: 10px
+// 				background: url(../img/tab-arrow.png)
+// 				transform: scale(1, -1)
+// 				background-size: cover
+// 				position: absolute
+// 				z-index: 1
+// 				top: -8px
+// 				left: 50%
+// 				margin-left: -20px
+// 				cursor: default
+// 			.hint
+// 				display: block
+// 			a
+// 				text-decoration: underline
+/*---Main Finish*/
+
+/*Content Start-----------------*/
+// .whatIsSimpleat
+// 	.symbol
+// 		background-position: 0px 0px
+// 	p
+// 		color: #c4fffc
+// 		@extend .montserrat_r
+// 	.promo
+// 		p
+// 			font-size: 20px
+// 			@extend .montserrat_b
+
+// 	.embed-responsive
+// 		border-radius: 9px
+// 		&:before
+// 			display: none
+// 	.promo-img
+// 		background: url(../img/portrait.jpg)
+// 		height: 362px
+
+// 		max-height: 100%
+// 	.play
+// 		text-decoration: none
+// 		position: absolute
+// 		margin: -50px
+// 		top: 50%
+// 		left: 50%
+// 		width: 100px
+// 		z-index: 2
+// 		p
+// 			font-size: 18px
+// 			padding-top: 5px
+// 	.play_video
+// 		width: 80px
+// 		height: 80px
+// 		position: static
+
+
+// 		background-position: -220px
+
+
+// .whySimpleat
+
+// 	.cards
+
+// 		h3
+// 			margin-bottom: 20px
+// 		p
+// 			font-size: 13px
+// 		.card_photo
+// 			background-blend-mode: multiply
+// 			background-repeat: no-repeat
+
+
+// 			height: 165px
+// 			&:before
+// 				content: ' '
+// 				position: absolute
+// 				background-image: url(../img/icons_big.png)
+// 				height: 90px
+// 				width: 114px
+// 				top: 37px
+// 				left: 24px
+
+
+
+// 		.card
+// 			width: 165px
+// 			@extend .mb-1
+// 		.card-1
+// 			.card_photo
+// 				background:  url(../img/minerals_vitamins.jpg)
+// 				background-color: rgba(57, 186, 130, 0.5)
+// 				&:before
+// 					background-position: 16px 0
+// 		.card-2
+// 			.card_photo
+// 				background:  url(../img/minerals_vitamins.jpg)
+// 				background-position: -150px 0px
+// 				background-color: rgba(41, 194, 217, 0.5)
+// 				&:before
+// 					background-position: -175px 0px
+// 		.card-3
+// 			.card_photo
+// 				background:  url(../img/minerals_vitamins.jpg)
+// 				background-position: -250px -100px
+// 				background-color: rgba(255, 200, 53, 0.5)
+// 				&:before
+// 					background-position: -370px 0
+// 		.card-4, .card-5, .card-6
+// 			.card_photo
+// 				background:  url(../img/money.jpg)
+// 				background-size: cover
+// 				background-position: -50px
+// 				background-color: rgba(57, 186, 178, 0.5)
+// 				&:before
+// 					background-position: -956px 0
+
+// .testimonials
+// 	padding-top: 75px
+// 	padding-bottom: 100px
+// 	.card, .portrait, .portrait:before
+// 		border-radius: 9px
+// 	.card
+// 		border: none
+// 		p
+// 			font-size: 13px
+
+// 	.comment
+
+// 		.portrait
+
+
+
+// 			height: 263px
+
+// 			&:before
+// 				content: ' '
+// 				position: absolute
+// 				width: 100%
+// 				height: 100%
+// 				background: linear-gradient(to bottom, rgba(206,212,211,0.3) 0%,rgba(130,137,139,0.9) 120%)
+
+
+// 		.content
+// 			background: url(../img/portrait.jpg) no-repeat
+// 			background-size: cover
+// 			background-position: -170px
+// 		.stiv
+// 			background: url(https://uznayvse.ru/images/celebs/jobs_medium.jpg) no-repeat
+// 			background-size: cover
+
+
+// 	.card-img-overlay
+// 		top: auto
+// 		padding: 15px
+
+// 	.play_video
+// 		width: 30px
+// 		height: 30px
+// 		top: 14px
+// 		right: 13px
+
+
+// .mainIngredients
+// 	.cards
+
+// 		h3
+// 			margin-bottom: 20px
+// 		p
+// 			font-size: 13px
+
+// 		.card
+// 			width: 193px
+// 			@extend .mb-1
+// 		.card-1
+// 			.card_photo
+// 				background:  url(../img/soya.jpg)
+
+// 		.card-2
+// 			.card_photo
+// 				background:  url(../img/soya.jpg)
+
+// 		.card-3
+// 			.card_photo
+// 				background:  url(../img/soya.jpg)
+
+
+// 		.card-4, .card-5
+// 			.card_photo
+// 				background:  url(../img/soya.jpg)
+// 		.card
+// 			.card_photo
+// 				background-size: cover !important
+// 				background-repeat: no-repeat !important
+
+// 				height: 193px
+
+
+// #contact
+// 	padding-top: 108px
+// 	margin-top: -108px
+// 	position: relative
+// 	-webkit-background-clip: content-box
+// 	background-clip: content-box
+// .newsletter
+// 	input
+// 		max-width: 508px
+// 		height: 60px
+// 		border: 1px solid #e5e4d7
+// 		border-radius: 5px
+// 		@extend .montserrat_r
+// 		font-size: 24px
+// 		padding-left: 21px
+
+// .nutritionalFacts
+// 	padding-top: 100px
+// 	padding-bottom: 100px
+// 	.facts
+// 		padding-top: 63px
+// 	.fact
+// 		@extend .align-items-center
+// 		@extend .mb-4
+
+
+// 		p
+// 			font-size: 14px
+
+// 	.icon_fact
+// 		width: 60px
+// 		height: 62px
+// 		background: url(../img/icons_big.png) no-repeat
+// 		background-position: 0px -98px
+// 	.fact-1
+// 		.icon_fact
+// 			background-position: 6px -98px
+// 	.fact-2
+// 		padding-right: 36px
+// 		.icon_fact
+// 			background-position: -82px -98px
+// 	.fact-3
+// 		.icon_fact
+// 			background-position: -179px -98px
+// 	.fact-4
+// 		.icon_fact
+// 			background-position: -271px -98px
+// 	.fact-5
+// 		padding-left: 36px
+
+// 		.icon_fact
+// 			background-position: -376px -98px
+// 	.fact-6
+// 		.icon_fact
+// 			background-position: -475px -98px
+
+
+// 	a
+// 		font-size: 18px
+// 		line-height: 1px
+// 		border-bottom: 1px solid
+// 		text-decoration: none
+
+// .superFood
+// 	padding-top: 100px
+// 	padding-bottom: 100px
+// 	nav
+
+// 		a
+// 			font-size: 24px
+// 			@extend .text-eleven
+// 			background: none !important
+// 			border: none !important
+// 			position: relative
+// 			margin-bottom: 28px !important
+
+// 			&:before
+// 				content: ' '
+// 				position: absolute
+// 				height: 3px
+// 				width: 30px
+// 				background: #121920
+// 				top: 41px
+// 				left: 50%
+// 				margin-left: -15px
+// 		.active
+// 			&:after
+// 				content: ' '
+// 				width: 40px
+// 				height: 20px
+// 				background: url(../img/tab-arrow.png)
+// 				position: absolute
+// 				top: 60px
+// 				left: 50%
+// 				margin-left: -20px
+// 				cursor: default
+// 			&:before
+// 				background: #36c1ba
+
+
+// 		.active, a.active:focus
+// 			color: #36c1ba !important
+// 		a.active:hover
+// 			color: #1bb0be !important
+// 			&:before
+// 				background: #1bb0be !important
+
+
+// 	.tab-content
+// 		border-radius: 8px
+// 		margin-bottom: 40px
+// 		padding-right: 50px
+// 	.bottle_fade
+// 		margin-top: 81px
+// 		margin-bottom: 40px
+// 		position: relative
+// 		p
+// 			font-size: 30px
+// 			position: absolute
+// 			top: 50%
+// 			margin-top: -22.5px
+
+// 	thead
+// 		th
+// 			border-top: none
+// 			border-bottom: 1px
+// 	tbody
+// 		th
+// 			@extend .text-sixth
+// 			padding-left: 0
+// 			padding-right: 0
+// 	td
+// 		@extend .text-twelf
+// 	td, th
+// 		padding-top: 5px
+// 		padding-bottom: 5px
+
+
+// /*--------------Content Finish*/
+/*Footer-------------*/
+footer
+	.first_part
+		background-color: #192632
+	.social-group
+
+
+		.border-custom
+			&:before, &:after
+				content: " "
+				width: 1px
+				height: 30px
+				background: #445059
+				display: inline-block
+				position: absolute
+				bottom: -3px
+				cursor: default
+
+			&:before
+				left: 0
+
+
+
+			&:after
+				right: 0
+
+
+	.social
+		background-image: url(../img/icons_big.png)
+		width: 52px
+		height: 50px
+	.fb
+		background-position: -579px -99px
+	.tw
+		background-position: -641px -99px
+		// border-left: 1px solid
+		// border-right: 1px solid
+		// border-color: #445059
+		p
+	.inst
+		background-position: -703px -99px
+	.second_part
+		p
+			line-height: 1.3
+
+		a
+			font-size: 18px
+
+		span, select
+				font-size: 13px
+				color: #fff
+		.phone, .msg
+			background-image: url(../img/icons_small.png)
+			width: 40px
+			height: 40px
+		.phone
+			background-position: -130px 0px
+		.msg
+			background-position: -174px 0px
+		select
+			border: none
+			height: 40px
+			padding-left: 45px
+			padding-right: 25px
+			border-radius: 5px
+			background: url(../img/language-eng.png) no-repeat left 15px center/19px 13px, url(../img/arrow_down.png) no-repeat right 14px center
+			background-color: #1e252b
+
+
+
+
+
+
+
+
+/*-------------Footer Finish*/
+
+/*----------------*/
+
+/* Animations-------------*/
+
+/*-------------Animations Finish
+
+/*Media------------------*/
+@import media.sass
+/*---------------Media Finish*/
+
+/*------------------------------FINISH-------------------------------
